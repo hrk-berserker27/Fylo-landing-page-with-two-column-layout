@@ -1,0 +1,32 @@
+{
+  "name": "fylo-landing-page-with-two-column-layout-master",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Fylo-landing-page-with-two-column-layout"
+  },
+  "keywords": [
+    "Landing",
+    "page",
+    "Next",
+    "React",
+    "Sass"
+  ],
+  "author": "Hritick Bhushan",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.54.9"
+  }
+}
