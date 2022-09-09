@@ -13,7 +13,7 @@ export default function Footer() {
           <li>Press</li>
           <li>Blog</li>
         </ul>
-        <ul class="more-tabs">
+        <ul className="more-tabs">
           <li>Contact Us</li>
           <li>Terms</li>
           <li>Privacy</li>

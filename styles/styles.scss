@@ -5,3 +5,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+//navbar design
+nav {
+    @include d.flex(row, space-between, center);
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+
+    .logo {
+        content: url(../public/images/logo.svg);
+    }
+
+    ul {
+        @include d.flex(row, center, center);
+        list-style-type: none;
+        gap: 2em;
+
+        li {
+            @include d.fontFamily(map-get(d.$font-family, "headingFont"), map-get(d.$font-weights, "weight-1"));
+            color: map-get(d.$color-bucket, "Very Dark Blue");
+        }
+    }
+}
+
+/*Utility classes*/
+.font-weight-1 {
+    font-weight: 400;
+}
+
+.font-weight-2 {
+    font-weight: 700;
+}
+
+.font-family-1 {
+    font-family: "Raleway";
+}
