@@ -3,10 +3,10 @@ export default function Navbar() {
     <>
       <nav>
         <div className="logo"></div>
-        <ul className="Navbar">
-          <li>Features</li>
-          <li>Team</li>
-          <li>Sign In</li>
+        <ul>
+          <li className="dark-color font-weight-1 font-family-1">Features</li>
+          <li className="dark-color font-weight-1 font-family-1">Team</li>
+          <li className="dark-color font-weight-1 font-family-1">Sign In</li>
         </ul>
       </nav>
     </>

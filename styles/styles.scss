@@ -21,11 +21,6 @@ nav {
         @include d.flex(row, center, center);
         list-style-type: none;
         gap: 2em;
-
-        li {
-            @include d.fontFamily(map-get(d.$font-family, "headingFont"), map-get(d.$font-weights, "weight-1"));
-            color: map-get(d.$color-bucket, "Very Dark Blue");
-        }
     }
 }
 
@@ -40,4 +35,12 @@ nav {
 
 .font-family-1 {
     font-family: "Raleway";
+}
+
+.font-family-2 {
+    font-family: "Open sans";
+}
+
+.dark-color {
+    color: map-get(d.$color-bucket, "Very Dark Blue");
 }

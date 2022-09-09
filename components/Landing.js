@@ -2,7 +2,7 @@ export default function Landing() {
   return (
     <>
       <section>
-        <h1 className="font-weight-2 font-family-1">
+        <h1 className="font-weight-2 font-family-1 dark-color">
           All your files in one secure location, accessible anywhere.
         </h1>
         <p>
