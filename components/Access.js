@@ -8,10 +8,10 @@ export default function Access() {
         help you.
       </p>
       <form>
-        <label for="input-2">email@example.com</label>
+        <label htmlFor="input-2">email@example.com</label>
         <input type="text" id="input-2" name="input-2" />
-        <label for="input-submit" name="submit">
-          Get Started For Free
+        <label htmlFor="input-submit" name="submit">
+          Get Started htmlFor Free
         </label>
         <input type="submit" id="input-submit" />
       </form>

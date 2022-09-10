@@ -21,10 +21,6 @@ export default function App() {
           sizes="32x32"
           href="./images/favicon-32x32.png"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
-          rel="stylesheet"
-        ></link>
 
         <title>
           Frontend Mentor | Fylo landing page with two column layout

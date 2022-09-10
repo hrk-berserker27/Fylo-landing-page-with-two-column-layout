@@ -1,23 +1,27 @@
 export default function Landing() {
   return (
-    <>
-      <section>
-        <h1 className="font-weight-2 font-family-1 dark-color">
+    <div className="section-flex">
+      <section className="landing">
+        <h1 className="h1-margin-top font-weight-2 font-family-1 dark-color line-height h1-width h1-font-size">
           All your files in one secure location, accessible anywhere.
         </h1>
-        <p>
+        <p className="light-color font-family-2 font-weight-1 landing-p-width margin-top-bottom">
           Fylo stores your most important files in one secure location. Access
           them wherever you need, share and collaborate with friends,family, and
           co-workers.
         </p>
-        <form>
-          <label for="email-id">Enter your email...</label>
-          <input type="email" id="email-id" />
-          <label for="submit-1">Get Started</label>
-          <input type="submit" id="submit-1" />
+        <form className="form-1">
+          <label className="label light-gray font-family-2">
+            Enter your email...
+            <input type="email" />
+          </label>
+          <label className="font-family-2 light-grayish-blue label-2 box-shadow">
+            Get Started
+            <input type="submit" />
+          </label>
         </form>
-        <aside className="land-page-image"></aside>
       </section>
-    </>
+      <aside className="land-page-image"></aside>
+    </div>
   );
 }
