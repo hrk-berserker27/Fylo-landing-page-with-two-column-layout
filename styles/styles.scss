@@ -10,8 +10,8 @@
 nav {
     @include d.flex(row, space-between, center);
     padding-top: 2em;
-    padding-right: 2.5em;
-    padding-left: 2.5em;
+    padding-right: 4em;
+    padding-left: 4em;
 
     .logo {
         content: url(../public/images/logo.svg);
@@ -54,8 +54,8 @@ nav {
     @include d.flex(row, center, flex-start);
     padding-top: 0em;
     padding-bottom: 3em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 .landing {
@@ -150,4 +150,56 @@ input[type="submit"] {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.features {
+    min-height: 100vh;
+    @include d.flex(column, center, flex-start);
+    padding-left: 4em;
+    padding-right: 4em;
+    background: url(../public/images/illustration-2.svg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 4em);
+    background-position-y: 62%;
+}
+
+.para-width {
+    width: 60ch;
+}
+
+.para-margin-1 {
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+}
+
+.para-margin-2 {
+    margin-bottom: 0.8em;
+}
+
+.link {
+    color: map-get(d.$color-bucket, "Moderate Cyan");
+    text-decoration: none;
+}
+
+.arrow {
+    height: 0.75em;
+    width: 0.75em;
+    background: url(../public/images/icon-arrow.svg);
+    background-position: center;
+    background-color: map-get(d.$color-bucket, "Moderate Cyan");
+    border-radius: 50%;
+
+}
+
+.link-container {
+    @include d.flex(row, flex-start, center);
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid;
+    color: map-get(d.$color-bucket, "Moderate Cyan");
+    gap: 0.5em;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

@@ -3,16 +3,24 @@ import Review from "../components/Review";
 export default function Features() {
   return (
     <section className="features">
-      <h1>Stay productive, wherever you are</h1>
-      <p>
+      <h1 className="h1-font-size font-family-1 dark-color">
+        Stay productive, wherever you are
+      </h1>
+      <p className="para-width light-color para-margin-1">
         Never let location be an issue when accessing your files. Fylo has you
         covered htmlFor all of your file storage needs.{" "}
       </p>
-      <p>
-        Securely share files and folders with friends, family and colleagues
-        htmlFor live collaboration. No email attachments required!
+      <p className="para-width light-color para-margin-2">
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!
       </p>
-      <Link href="">See how Fylo works</Link>
+      <div className="link-container">
+        <Link href="">
+          <a className="link">See how Fylo works</a>
+        </Link>
+        <span className="arrow"></span>
+      </div>
+
       <Review />
     </section>
   );
