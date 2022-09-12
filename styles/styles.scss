@@ -203,3 +203,21 @@ input[type="submit"] {
         cursor: pointer;
     }
 }
+
+.review-container {
+    width: 15em;
+    height: max-content;
+    padding: 1em;
+
+    .quote {
+        background: url(../public/images/icon-quotes.svg);
+        height: 1.2em;
+        width: 1.2em;
+        background-repeat: no-repeat;
+        border: 2px solid;
+    }
+
+    .review {
+        font-size: 14px;
+    }
+}
