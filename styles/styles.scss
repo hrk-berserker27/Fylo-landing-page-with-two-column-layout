@@ -165,7 +165,7 @@ input[type="submit"] {
 }
 
 .para-width {
-    width: 60ch;
+    width: 58ch;
 }
 
 .para-margin-1 {
@@ -205,19 +205,56 @@ input[type="submit"] {
 }
 
 .review-container {
-    width: 15em;
+    width: 45ch;
     height: max-content;
-    padding: 1em;
+    padding: 2em;
+    box-shadow: 1px 1px 15px 5px hsl(0 0% 90%);
+    border-radius: 5px;
+    margin-top: 3em;
+    font-size: 9px;
+    line-height: 1rem;
+    padding-right: 2.5em;
 
     .quote {
         background: url(../public/images/icon-quotes.svg);
         height: 1.2em;
-        width: 1.2em;
+        width: 1.7em;
         background-repeat: no-repeat;
-        border: 2px solid;
     }
 
     .review {
-        font-size: 14px;
+        margin-top: 0.7em;
+        margin-bottom: 1.2em;
+    }
+
+    .author-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.8em;
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 0.5em;
+        }
+
+        .revewer-image {
+            height: 3em;
+            width: 3em;
+            border-radius: 50%;
+            content: url(../public/images/avatar-testimonial.jpg);
+        }
+
+        .reviewer {
+            font-size: 8px;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .profession {
+            font-size: 7px;
+        }
     }
 }
