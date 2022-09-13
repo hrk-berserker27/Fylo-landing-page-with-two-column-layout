@@ -162,6 +162,7 @@ input[type="submit"] {
     background-repeat: no-repeat;
     background-position-x: calc(100% - 4em);
     background-position-y: 62%;
+    background-color: map-get(d.$color-bucket, "Light Grayish Blue");
 }
 
 .para-width {
@@ -205,15 +206,16 @@ input[type="submit"] {
 }
 
 .review-container {
-    width: 45ch;
+    width: 47ch;
     height: max-content;
     padding: 2em;
     box-shadow: 1px 1px 15px 5px hsl(0 0% 90%);
     border-radius: 5px;
     margin-top: 3em;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1rem;
-    padding-right: 2.5em;
+    padding-right: 3em;
+    padding-left: 3em;
 
     .quote {
         background: url(../public/images/icon-quotes.svg);
@@ -257,4 +259,73 @@ input[type="submit"] {
             font-size: 7px;
         }
     }
+}
+
+.access {
+    background-color: map-get(d.$color-bucket, "Desaturated Blue");
+    padding-top: 4em;
+    padding-left: 4em;
+    padding-bottom: 4em;
+    display: flex;
+
+    .first {
+        width: 50%;
+    }
+
+    p {
+        width: 55ch;
+        font-size: 13px;
+        line-height: 1.2rem;
+        margin-top: 1.5em;
+    }
+
+    form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5em;
+        position: relative;
+        gap: 0.9em;
+        isolation: isolate;
+
+        label[for="input-2"] {
+            position: absolute;
+            top: 10%;
+            left: 17%;
+            font-size: 9px;
+            color: map-get(d.$color-bucket, "Light Gray");
+        }
+
+        label[for="input-submit"] {
+            position: absolute;
+            top: 55%;
+            left: 17%;
+            font-size: 11px;
+            font-family: "Raleway";
+            color: map-get(d.$color-bucket, "Light Grayish Blue");
+            font-weight: 700;
+        }
+
+        #input-2 {
+            width: 27em;
+            padding: 0.7em;
+            border-radius: 3px;
+            border: 0px;
+            box-shadow: 1px 1px 8px hsl(238, 22%, 38%);
+        }
+
+        #input-submit {
+            position: relative;
+            width: 11.2em;
+            height: 2.5em;
+            background-color: map-get(d.$color-bucket, "Bright Blue");
+            z-index: -1;
+            box-shadow: 1px 1px 3px 1px hsl(238, 22%, 35%);
+            border-radius: 1px;
+        }
+    }
+}
+
+.light-grayish-blue {
+    color: map-get(d.$color-bucket, "Light Grayish Blue");
 }
