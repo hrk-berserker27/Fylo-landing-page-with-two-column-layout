@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 //navbar design
 nav {
     @include d.flex(row, space-between, center);
@@ -157,12 +158,38 @@ input[type="submit"] {
     @include d.flex(column, center, flex-start);
     padding-left: 4em;
     padding-right: 4em;
-    background: url(../public/images/illustration-2.svg);
+    background-image: url(../public/images/illustration-2.svg);
     background-size: 30%;
     background-repeat: no-repeat;
     background-position-x: calc(100% - 4em);
     background-position-y: 62%;
-    background-color: map-get(d.$color-bucket, "Light Grayish Blue");
+    position: relative;
+
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 90px;
+        top: 0;
+        z-index: -1;
+        background-image: url(../public/images/bg-curve-desktop.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: 0;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: calc(100vh - 90px);
+        top: 90px;
+        left: 0;
+        z-index: -2 !important;
+        background-color: #F8F8FE;
+    }
+
 }
 
 .para-width {
