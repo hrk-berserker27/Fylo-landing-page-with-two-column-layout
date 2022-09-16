@@ -10,16 +10,18 @@ export default function Landing() {
           them wherever you need, share and collaborate with friends,family, and
           co-workers.
         </p>
-        <form className="form-1">
-          <label className="label light-gray font-family-2">
-            Enter your email...
-            <input type="email" />
-          </label>
-          <label className="font-family-2 light-grayish-blue label-2 box-shadow">
-            Get Started
-            <input type="submit" />
-          </label>
-        </form>
+        <div className="form-container">
+          <form className="form-1">
+            <label className="label light-gray font-family-2">
+              Enter your email...
+              <input type="email" />
+            </label>
+            <label className="font-family-2 light-grayish-blue label-2 box-shadow">
+              Get Started
+              <input type="submit" />
+            </label>
+          </form>
+        </div>
       </section>
       <aside className="land-page-image"></aside>
     </div>

@@ -13,12 +13,14 @@ export default function Access() {
       </div>
 
       <form className="font-family-2">
-        <label htmlFor="input-2">email@example.com</label>
-        <input type="text" id="input-2" name="input-2" />
-        <label htmlFor="input-submit" name="submit">
-          Get Started For Free
+        <label className="input-first">
+          email@example.com
+          <input type="text" id="input-2" />
         </label>
-        <input type="submit" id="input-submit" />
+        <label className="input-second">
+          Get Started For Free
+          <input type="submit" className="input-submit" />
+        </label>
       </form>
     </div>
   );

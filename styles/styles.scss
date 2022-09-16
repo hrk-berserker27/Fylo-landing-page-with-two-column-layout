@@ -98,7 +98,7 @@ nav {
 
 .form-1 {
     @include d.flex(row, flex-start, flex-start);
-    gap: 1em;
+    gap: 2.5em;
 }
 
 .label {
@@ -112,32 +112,54 @@ nav {
 
 .label-2 {
     position: relative;
-    height: 3em;
+    min-height: 3em;
     width: 13.5em;
     @include d.flex(row, center, center);
     background-color: map-get(d.$color-bucket, "Bright Blue");
     font-size: 12px;
     border-radius: 2px;
-    pointer-events: none;
+    padding: 1em;
+
+    &:hover {
+        background-color: hsl(224, 93%, 68%);
+    }
+
 }
 
 
 input[type="email"] {
     position: absolute;
-    inset: 0;
+    width: 24em;
+    min-height: 3em;
+    top: 0;
+    left: 0;
     background: transparent;
     padding-left: 1.5em;
     border-radius: 2px;
-    border: 1px solid map-get(d.$color-bucket, "Very Dark Blue");
+    border: 1px solid hsl(238, 22%, 44%);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+        background: hsl(240, 12%, 95%);
+    }
 }
 
 input[type="submit"] {
     position: absolute;
-    inset: 0;
+    width: 100%;
+    min-height: 3em;
     background: transparent;
     color: transparent;
     border: 0;
 
+    &:hover {
+        cursor: pointer;
+
+    }
 }
 
 .box-shadow {
@@ -229,6 +251,7 @@ input[type="submit"] {
 
     &:hover {
         cursor: pointer;
+        filter: brightness(125%);
     }
 }
 
@@ -311,45 +334,67 @@ input[type="submit"] {
         display: flex;
         flex-direction: column;
         padding-left: 5em;
-        position: relative;
-        gap: 0.9em;
-        isolation: isolate;
+        gap: 1.2em;
+        padding-top: 1em;
 
-        label[for="input-2"] {
-            position: absolute;
-            top: 10%;
-            left: 17%;
+        .input-first {
+            position: relative;
+            width: 35em;
+            min-height: 3em;
             font-size: 9px;
             color: map-get(d.$color-bucket, "Light Gray");
-        }
-
-        label[for="input-submit"] {
-            position: absolute;
-            top: 55%;
-            left: 17%;
-            font-size: 11px;
-            font-family: "Raleway";
-            color: map-get(d.$color-bucket, "Light Grayish Blue");
-            font-weight: 700;
-        }
-
-        #input-2 {
-            width: 27em;
-            padding: 0.7em;
+            background-color: map-get(d.$color-bucket, "Light Grayish Blue");
+            padding: 1em;
+            padding-left: 1.5em;
             border-radius: 3px;
-            border: 0px;
             box-shadow: 1px 1px 8px hsl(238, 22%, 38%);
         }
 
-        #input-submit {
+        .input-second {
             position: relative;
-            width: 11.2em;
-            height: 2.5em;
+            width: 15em;
+            min-height: 3em;
+            font-size: 9px;
+            font-family: "Raleway";
+            color: map-get(d.$color-bucket, "Light Grayish Blue");
             background-color: map-get(d.$color-bucket, "Bright Blue");
-            z-index: -1;
-            box-shadow: 1px 1px 3px 1px hsl(238, 22%, 35%);
-            border-radius: 1px;
+            font-weight: 700;
+            border-radius: 3px;
+            padding: 1.2em;
+            text-align: center;
+            box-shadow: 1px 1px 8px hsl(238, 22%, 38%);
+
+            &:hover {
+                background-color: hsl(224, 93%, 68%);
+            }
+
+            .input-submit {
+                position: absolute;
+                top: 0;
+                background-color: transparent;
+                left: 0;
+                min-height: 3em;
+            }
         }
+
+        #input-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+            border: 0px;
+            background-color: transparent;
+            outline: none;
+            padding-left: 1.5em;
+
+            &:focus {
+                background-color: #F8F8FE;
+            }
+        }
+
+
     }
 }
 
@@ -385,6 +430,11 @@ footer {
             font-size: 0.8rem;
             margin-top: 1em;
             color: map-get(d.$color-bucket, "Light Grayish Blue");
+
+            &:hover {
+                color: hsl(224, 93%, 68%);
+                cursor: pointer;
+            }
         }
     }
 
@@ -437,6 +487,7 @@ footer {
             &:hover {
                 cursor: pointer;
                 transform: scale(1.1);
+                color: hsl(224, 93%, 68%);
             }
         }
     }
