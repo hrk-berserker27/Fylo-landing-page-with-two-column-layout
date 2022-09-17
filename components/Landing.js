@@ -11,7 +11,10 @@ export default function Landing() {
       const inputElement = label.children[0];
       const emailValue = inputElement.value; //value property returns the value in the input field
       //using regular expression object
-      let myRegEx = RegExp("^[a-z]([a-z]|[0-9])+[@]gmail.com", "gi"); //constructor takes two inputs one is the expression and other is the flags
+      let myRegEx = RegExp(
+        "^[a-z]([a-z]|[0-9])+[@](gmail.com|outlook.com|hotmail.com)$",
+        "gi"
+      ); //constructor takes two inputs one is the expression and other is the flags
 
       if (myRegEx.test(emailValue)) {
         if (inputElement.classList.contains("red-border"))
