@@ -344,8 +344,16 @@ input[type="submit"] {
         display: flex;
         flex-direction: column;
         padding-left: 5em;
-        gap: 1.2em;
+        gap: 1.5em;
         padding-top: 1em;
+        position: relative;
+
+        .second-validator {
+            color: hsl(240, 12%, 95%);
+            font-size: 9px;
+            position: absolute;
+            top: 5.5em;
+        }
 
         .input-first {
             position: relative;
