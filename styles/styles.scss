@@ -63,6 +63,11 @@ nav {
     padding-bottom: 3em;
     padding-left: 4em;
     padding-right: 4em;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        width: 100vw;
+    }
 }
 
 .landing {
@@ -171,6 +176,28 @@ input[type="submit"] {
 
     }
 }
+
+.form-container {
+    form {
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            label {
+                width: 100%;
+            }
+
+            .sm-f {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
 
 .box-shadow {
     box-shadow: 2px 2px 3px hsl(238, 22%, 80%);

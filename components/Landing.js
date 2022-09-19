@@ -43,7 +43,7 @@ export default function Landing() {
               Enter your email...
               <input type="email" />
             </label>
-            <label className="font-family-2 light-grayish-blue label-2 box-shadow">
+            <label className="font-family-2 light-grayish-blue label-2 box-shadow sm-f">
               Get Started
               <input type="submit" />
             </label>
