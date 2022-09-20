@@ -185,6 +185,7 @@ input[type="submit"] {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 0;
 
             label {
                 width: 100%;
@@ -210,6 +211,11 @@ input[type="submit"] {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1000px) {
+        width: 100vw;
+        height: 50vh;
+    }
 }
 
 .features {
@@ -223,6 +229,11 @@ input[type="submit"] {
     background-position-x: calc(100% - 4em);
     background-position-y: 62%;
     position: relative;
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        padding: 0;
+    }
 
 
     &::after {
@@ -304,6 +315,10 @@ input[type="submit"] {
     padding-right: 3em;
     padding-left: 3em;
 
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
+
     .quote {
         background: url(../public/images/icon-quotes.svg);
         height: 1.2em;
@@ -355,8 +370,19 @@ input[type="submit"] {
     padding-bottom: 4em;
     display: flex;
 
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
     .first {
         width: 50%;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
     }
 
     p {
@@ -364,6 +390,10 @@ input[type="submit"] {
         font-size: 13px;
         line-height: 1.2rem;
         margin-top: 1.5em;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
     }
 
     form {
@@ -374,6 +404,10 @@ input[type="submit"] {
         gap: 1.5em;
         padding-top: 1em;
         position: relative;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
 
         .second-validator {
             color: hsl(240, 12%, 95%);
@@ -457,6 +491,13 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        flex-wrap: nowrap;
+    }
+
     .footer-logo {
         flex-basis: 100%;
         flex-grow: 1;
@@ -518,6 +559,10 @@ footer {
         align-items: flex-start;
         padding-top: 1em;
         gap: 0.7em;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
 
         .items {
             display: grid;
