@@ -14,14 +14,25 @@ nav {
     padding-right: 4em;
     padding-left: 4em;
 
+    @media screen and (max-width: 1000px) {
+        border: 2px solid;
+        width: 100vw;
+    }
+
     .logo {
         content: url(../public/images/logo.svg);
+        zoom: 80%;
     }
 
     ul {
         @include d.flex(row, center, center);
         list-style-type: none;
         gap: 2em;
+
+        @media screen and (max-width: 1000px) {
+            flex-grow: 1;
+            width: 100vw;
+        }
     }
 }
 
